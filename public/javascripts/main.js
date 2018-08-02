@@ -1,7 +1,5 @@
 $(function() {
-	// $('#loginForm').
-
-
+	
 	$('#submitBtn').click(function() {
 		var valStr = $('#loginForm').serialize();
 		$.ajax({

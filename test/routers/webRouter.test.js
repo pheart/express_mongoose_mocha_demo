@@ -168,14 +168,13 @@ describe('# webRouter', () => {
 				.set('Accept', 'application/json')
 				.expect(200)
 				.end((err, res) => {
-					if (err) throw err; console.log(res.headers['set-cookie'])
+					if (err) throw err;
 					Request
 						.get('/')
 						.set('Cookie', res.headers['set-cookie'])
 						// .expect(200)
-						.end((err, res) => { if(err) {console.log('++++' + err.message);}
+						.end((err, res) => {
 							if (err) throw err;
-							console.log(res.body);
 							assert.equal(res.headers['content-type'], 'text/html; charset=utf-8');
 							done();
 						})
