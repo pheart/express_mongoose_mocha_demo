@@ -1,0 +1,12 @@
+extend ./layout
+
+block content
+	form#registerForm
+		div
+			input(type="text", placeholder="username", id="username", name="username")
+		div
+			input(type="text", placeholder="password", id="password", name="password")
+		div
+			button(id="registerBtn") 注册
+		div
+			a(href="/user/login") 去登录

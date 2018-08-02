@@ -1,0 +1,30 @@
+{
+  "name": "init",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "export NODE_ENV=dev && nodemon ./bin/www",
+    "pro": "pm2 start ecosystem.config.js --env production",
+    "test": "export NODE_ENV=test && mocha test/**/*.test.js --exit"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.0",
+    "body-parser": "~1.17.1",
+    "co": "^4.6.0",
+    "connect-mongo": "^2.0.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "express-session": "^1.15.6",
+    "jade": "~1.11.0",
+    "mocha": "^5.2.0",
+    "mongoose": "^5.2.4",
+    "morgan": "~1.8.1",
+    "serve-favicon": "~2.4.2",
+    "supertest": "^3.1.0",
+    "validator": "^10.4.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
